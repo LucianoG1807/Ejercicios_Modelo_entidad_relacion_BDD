@@ -1,0 +1,241 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="ylIu0S1AWt_u6GuR9kGp">
+    <mxGraphModel dx="1712" dy="1044" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="espacio" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;fillColor=#d5e8d4;strokeColor=#000000;" value="ESPACIO_TRABAJO" vertex="1">
+          <mxGeometry height="60" width="150" x="200" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="esp_pk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_codigo_espacio" vertex="1">
+          <mxGeometry height="40" width="115" x="25" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="esp_nom" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="nombre_espacio" vertex="1">
+          <mxGeometry height="40" width="95" x="160" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="esp_tip" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="tipo_espacio" vertex="1">
+          <mxGeometry height="40" width="80" x="22.5" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="esp_cap" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="capacidad_max" vertex="1">
+          <mxGeometry height="40" width="85" x="20" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="esp_tar" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="tarifa_hora_jornada" vertex="1">
+          <mxGeometry height="40" width="105" x="80" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="l_esp_1" edge="1" parent="1" source="espacio" target="esp_pk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_esp_2" edge="1" parent="1" source="espacio" target="esp_nom">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_esp_3" edge="1" parent="1" source="espacio" target="esp_tip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_esp_4" edge="1" parent="1" source="espacio" target="esp_cap">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_esp_5" edge="1" parent="1" source="espacio" target="esp_tar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_res" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#fff2cc;strokeColor=#000000;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1 : N&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="550" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="reserva" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;fillColor=#d5e8d4;strokeColor=#000000;" value="RESERVA" vertex="1">
+          <mxGeometry height="60" width="120" x="840" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="l_er_1" edge="1" parent="1" source="espacio" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="rel_res" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_er_2" edge="1" parent="1" source="rel_res" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="reserva" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="res_pk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_codigo_reserva" vertex="1">
+          <mxGeometry height="40" width="115" x="740" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="res_fuso" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="fecha_uso" vertex="1">
+          <mxGeometry height="40" width="75" x="830" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="res_hini" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="hora_inicio" vertex="1">
+          <mxGeometry height="40" width="70" x="910" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="res_hfin" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="hora_fin" vertex="1">
+          <mxGeometry height="40" width="60" x="980" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="res_est" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="estado_reserva" vertex="1">
+          <mxGeometry height="40" width="90" x="980" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="l_res_1" edge="1" parent="1" source="reserva" target="res_pk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_res_2" edge="1" parent="1" source="reserva" target="res_fuso">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_res_3" edge="1" parent="1" source="reserva" target="res_hini">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_res_4" edge="1" parent="1" source="reserva" target="res_hfin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_res_5" edge="1" parent="1" source="reserva" target="res_est">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_realiza" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=11;fillColor=#fff2cc;strokeColor=#000000;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;N&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;1&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="855" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="yOkgj9g_O64pt2vgN-hT-2" edge="1" parent="1" source="miembro" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="yOkgj9g_O64pt2vgN-hT-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="miembro" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;fillColor=#d5e8d4;strokeColor=#000000;" value="MIEMBRO" vertex="1">
+          <mxGeometry height="60" width="120" x="840" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="l_rm_1" edge="1" parent="1" source="reserva" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="rel_realiza" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_rm_2" edge="1" parent="1" source="rel_realiza" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="miembro" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mie_pk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_DNI" vertex="1">
+          <mxGeometry height="40" width="75" x="935" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="mie_nom" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="nombre" vertex="1">
+          <mxGeometry height="40" width="60" x="995" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="mie_emp" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="empresa_pertenencia" vertex="1">
+          <mxGeometry height="40" width="115" x="1035" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="mie_cor" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="correo_electronico" vertex="1">
+          <mxGeometry height="40" width="105" x="1040" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="mie_rfid" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="id_tarjeta_rfid" vertex="1">
+          <mxGeometry height="40" width="90" x="1000" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="l_mie_1" edge="1" parent="1" source="miembro" target="mie_pk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_mie_2" edge="1" parent="1" source="miembro" target="mie_nom">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_mie_3" edge="1" parent="1" source="miembro" target="mie_emp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_mie_4" edge="1" parent="1" source="miembro" target="mie_cor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_mie_5" edge="1" parent="1" source="miembro" target="mie_rfid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_acc" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#fff2cc;strokeColor=#000000;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1 : N&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="550" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="yOkgj9g_O64pt2vgN-hT-6" edge="1" parent="1" source="acceso" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="yOkgj9g_O64pt2vgN-hT-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="acceso" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;fillColor=#d5e8d4;strokeColor=#000000;" value="CONTROL_ACCESO" vertex="1">
+          <mxGeometry height="60" width="170" x="190" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="l_acc_1" edge="1" parent="1" source="miembro" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="rel_acc" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_acc_2" edge="1" parent="1" source="rel_acc" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="acceso" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="acc_pk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_id_fichaje" vertex="1">
+          <mxGeometry height="40" width="85" x="80" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="acc_fec" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="fecha_exacta" vertex="1">
+          <mxGeometry height="40" width="105" x="40" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="acc_mov" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="sentido_movimiento" vertex="1">
+          <mxGeometry height="40" width="110" x="42.5" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="acc_tar" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="codigo_tarjeta_leida" vertex="1">
+          <mxGeometry height="40" width="115" x="165" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="acc_val" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="estado_validacion" vertex="1">
+          <mxGeometry height="40" width="100" x="290" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="l_acc_a1" edge="1" parent="1" source="acceso" target="acc_pk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_acc_a2" edge="1" parent="1" source="acceso" style="exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="acc_fec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_acc_a3" edge="1" parent="1" source="acceso" style="entryX=1;entryY=0;entryDx=0;entryDy=0;" target="acc_mov">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_acc_a4" edge="1" parent="1" source="acceso" target="acc_tar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_acc_a5" edge="1" parent="1" source="acceso" target="acc_val">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_con" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=10;fillColor=#fff2cc;strokeColor=#000000;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;N&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="855" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="yOkgj9g_O64pt2vgN-hT-4" edge="1" parent="1" source="consumo" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="yOkgj9g_O64pt2vgN-hT-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="consumo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#000000;" value="CONSUMO_ADICIONAL" vertex="1">
+          <mxGeometry height="60" width="160" x="820" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="l_con_1" edge="1" parent="1" source="miembro" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="rel_con" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_con_2" edge="1" parent="1" source="rel_con" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="consumo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="con_pk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_id_consumo" vertex="1">
+          <mxGeometry height="40" width="90" x="965" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="con_fec" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="fecha_consumo" vertex="1">
+          <mxGeometry height="40" width="115" x="855" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="con_desc" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="descripcion_item" vertex="1">
+          <mxGeometry height="40" width="95" x="1060" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="con_cant" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="cantidad_unidades" vertex="1">
+          <mxGeometry height="40" width="100" x="1060" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="con_cos" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="costo_total_item" vertex="1">
+          <mxGeometry height="40" width="90" x="1062.5" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="l_con_a1" edge="1" parent="1" source="consumo" target="con_pk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_con_a2" edge="1" parent="1" source="consumo" target="con_fec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_con_a3" edge="1" parent="1" source="consumo" target="con_desc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_con_a4" edge="1" parent="1" source="consumo" target="con_cant">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_con_a5" edge="1" parent="1" source="consumo" target="con_cos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yOkgj9g_O64pt2vgN-hT-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="apellido" vertex="1">
+          <mxGeometry height="40" width="60" x="935" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="yOkgj9g_O64pt2vgN-hT-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="hora_consumo" vertex="1">
+          <mxGeometry height="40" width="115" x="980" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="yOkgj9g_O64pt2vgN-hT-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="hora_exacta" vertex="1">
+          <mxGeometry height="40" width="105" x="42.5" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="yOkgj9g_O64pt2vgN-hT-7" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#000000;" value="&lt;b&gt;RESERVADO&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="80" x="555" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="yOkgj9g_O64pt2vgN-hT-8" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#000000;" value="&lt;b&gt;REALIZA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="60" x="945" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="yOkgj9g_O64pt2vgN-hT-9" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#000000;" value="&lt;b&gt;GENERA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="60" x="565" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="yOkgj9g_O64pt2vgN-hT-10" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#000000;" value="&lt;b&gt;REGISTRA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="75" x="945" y="790" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

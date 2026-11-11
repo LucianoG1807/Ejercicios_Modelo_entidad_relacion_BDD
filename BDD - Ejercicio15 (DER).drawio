@@ -1,0 +1,341 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="ylIu0S1AWt_u6GuR9kGp">
+    <mxGraphModel dx="527" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="videojuego" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;fillColor=#ffcc99;strokeColor=#36393d;" value="VIDEOJUEGO" vertex="1">
+          <mxGeometry height="60" width="130" x="120" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="vid_pk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_codigo_videojuego" vertex="1">
+          <mxGeometry height="40" width="115" x="10" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vid_nom" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="nombre_juego" vertex="1">
+          <mxGeometry height="40" width="95" x="137.5" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vid_gen" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="genero" vertex="1">
+          <mxGeometry height="40" width="75" x="10" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="vid_des" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="desarrollador" vertex="1">
+          <mxGeometry height="40" width="85" x="10" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="vid_pla" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="plataforma_principal" vertex="1">
+          <mxGeometry height="40" width="105" x="10" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="l_vid_1" edge="1" parent="1" source="videojuego" target="vid_pk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_vid_2" edge="1" parent="1" source="videojuego" target="vid_nom">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_vid_3" edge="1" parent="1" source="videojuego" target="vid_gen">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_vid_4" edge="1" parent="1" source="videojuego" target="vid_des">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_vid_5" edge="1" parent="1" source="videojuego" target="vid_pla">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_org" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=11;fillColor=#eeeeee;strokeColor=#36393d;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1:N&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="415" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="torneo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;fillColor=#ffcc99;strokeColor=#36393d;" value="TORNEO" vertex="1">
+          <mxGeometry height="60" width="120" x="670" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="l_vo_1" edge="1" parent="1" source="videojuego" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="rel_org" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_vo_2" edge="1" parent="1" source="rel_org" style="endArrow=none;html=1;fontStyle=1;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="torneo" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="594.9999999999998" y="230" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tor_pk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_id_torneo" vertex="1">
+          <mxGeometry height="40" width="90" x="570" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="tor_nom" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="nombre_torneo" vertex="1">
+          <mxGeometry height="40" width="90" x="625" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tor_fini" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="fecha_inicio" vertex="1">
+          <mxGeometry height="40" width="80" x="720" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tor_ffin" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="fecha_fin" vertex="1">
+          <mxGeometry height="40" width="75" x="810" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tor_pre" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="premio_acumulado" vertex="1">
+          <mxGeometry height="40" width="105" x="820" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="l_tor_1" edge="1" parent="1" source="torneo" target="tor_pk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_tor_2" edge="1" parent="1" source="torneo" target="tor_nom">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_tor_3" edge="1" parent="1" source="torneo" target="tor_fini">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_tor_4" edge="1" parent="1" source="torneo" target="tor_ffin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_tor_5" edge="1" parent="1" source="torneo" target="tor_pre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-3" edge="1" parent="1" source="equipo" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="htBvTK48q9H14GhvChEC-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="equipo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;fillColor=#ffcc99;strokeColor=#36393d;" value="EQUIPO" vertex="1">
+          <mxGeometry height="60" width="120" x="1350" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="equ_pk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_id_equipo" vertex="1">
+          <mxGeometry height="40" width="100" x="1230" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="equ_raz" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="razon_social" vertex="1">
+          <mxGeometry height="40" width="90" x="1265" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="equ_pai" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="nombre_equipo" vertex="1">
+          <mxGeometry height="40" width="80" x="1360" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="equ_fun" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="fecha_fundacion" vertex="1">
+          <mxGeometry height="40" width="95" x="1450" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="equ_web" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="sitio_web_oficial" vertex="1">
+          <mxGeometry height="40" width="95" x="1490" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="l_equ_1" edge="1" parent="1" source="equipo" target="equ_pk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_equ_2" edge="1" parent="1" source="equipo" target="equ_raz">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_equ_3" edge="1" parent="1" source="equipo" target="equ_pai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_equ_4" edge="1" parent="1" source="equipo" target="equ_fun">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_equ_5" edge="1" parent="1" source="equipo" target="equ_web">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_ti_1" edge="1" parent="1" source="torneo" style="endArrow=none;html=1;fontStyle=1;fontSize=12;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="htBvTK48q9H14GhvChEC-14" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1025" y="229.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l_ti_2" edge="1" parent="1" source="htBvTK48q9H14GhvChEC-15" style="endArrow=none;html=1;fontStyle=1;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" target="equipo" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1115" y="229.9999999999999" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bR5e6OKixnW1KOANhnXn-2" edge="1" parent="1" source="jugador" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="bR5e6OKixnW1KOANhnXn-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jugador" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;fillColor=#ffcc99;strokeColor=#36393d;" value="JUGADOR" vertex="1">
+          <mxGeometry height="60" width="120" x="1352.5" y="523.5" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_per" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=11;fillColor=#eeeeee;strokeColor=#36393d;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;N&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="1365" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="l_ej_1" edge="1" parent="1" source="equipo" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="rel_per" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_ej_2" edge="1" parent="1" source="rel_per" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="jugador" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jug_pk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_id_jugador" vertex="1">
+          <mxGeometry height="40" width="95" x="1252.5" y="476.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jug_nic" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="nickname" vertex="1">
+          <mxGeometry height="40" width="80" x="1252.5" y="523.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jug_nom" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="nombre_real" vertex="1">
+          <mxGeometry height="40" width="90" x="1467.5" y="476.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jug_nac" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="nacionalidad" vertex="1">
+          <mxGeometry height="40" width="85" x="1247.5" y="573.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jug_rol" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="rol_en_juego" vertex="1">
+          <mxGeometry height="40" width="85" x="1487.5" y="523.5" as="geometry" />
+        </mxCell>
+        <mxCell id="l_jug_1" edge="1" parent="1" source="jugador" target="jug_pk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_jug_2" edge="1" parent="1" source="jugador" target="jug_nic">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_jug_3" edge="1" parent="1" source="jugador" target="jug_nom">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_jug_4" edge="1" parent="1" source="jugador" target="jug_nac">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_jug_5" edge="1" parent="1" source="jugador" target="jug_rol">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-5" edge="1" parent="1" source="partido" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="htBvTK48q9H14GhvChEC-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="partido" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;fillColor=#ffcc99;strokeColor=#36393d;" value="PARTIDO" vertex="1">
+          <mxGeometry height="60" width="120" x="670" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_prog" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=11;fillColor=#eeeeee;strokeColor=#36393d;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;N&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="685" y="348" as="geometry" />
+        </mxCell>
+        <mxCell id="l_tp_1" edge="1" parent="1" source="torneo" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="rel_prog" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_tp_2" edge="1" parent="1" source="rel_prog" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="partido" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="par_pk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_id_partido" vertex="1">
+          <mxGeometry height="40" width="90" x="530" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="par_fec" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="fecha_juego" vertex="1">
+          <mxGeometry height="40" width="105" x="530" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="par_map" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="mapa_escenario" vertex="1">
+          <mxGeometry height="40" width="95" x="807.5" y="563" as="geometry" />
+        </mxCell>
+        <mxCell id="par_s1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="sets_ganados_eq1" vertex="1">
+          <mxGeometry height="40" width="105" x="790" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="par_s2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="sets_ganados_eq2" vertex="1">
+          <mxGeometry height="40" width="105" x="810" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="l_par_1" edge="1" parent="1" source="partido" target="par_pk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_par_2" edge="1" parent="1" source="partido" target="par_fec">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_par_3" edge="1" parent="1" source="partido" target="par_map">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_par_4" edge="1" parent="1" source="partido" target="par_s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_par_5" edge="1" parent="1" source="partido" target="par_s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_est1" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=11;fillColor=#eeeeee;strokeColor=#36393d;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;N&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="1367.5" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="est_jug" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=11;fillColor=#ffcc99;strokeColor=#36393d;" value="ESTADISTICA_JUGADOR" vertex="1">
+          <mxGeometry height="50" width="170" x="991" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_est2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=11;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;:&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;N&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="685" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="l_es_1" edge="1" parent="1" source="jugador" style="endArrow=none;html=1;fontStyle=1;fontSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="rel_est1" value="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1414.9999999999998" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l_es_2" edge="1" parent="1" source="rel_est1" style="endArrow=none;html=1;fontStyle=1;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="est_jug" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_es_3" edge="1" parent="1" source="est_jug" style="endArrow=none;html=1;fontStyle=1;fontSize=12;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="rel_est2" value="N">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="740" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l_es_4" edge="1" parent="1" source="rel_est2" style="endArrow=none;html=1;fontStyle=1;fontSize=12;" target="partido" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="est_pk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_id_estadistica" vertex="1">
+          <mxGeometry height="40" width="110" x="975" y="855" as="geometry" />
+        </mxCell>
+        <mxCell id="est_kil" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="bajas_kills" vertex="1">
+          <mxGeometry height="40" width="70" x="895" y="855" as="geometry" />
+        </mxCell>
+        <mxCell id="est_dea" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="muertes_deaths" vertex="1">
+          <mxGeometry height="40" width="90" x="885" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="est_ass" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="asistencias_assists" vertex="1">
+          <mxGeometry height="40" width="105" x="1115" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="est_dan" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="dano_total_infligido" vertex="1">
+          <mxGeometry height="40" width="110" x="1051" y="895" as="geometry" />
+        </mxCell>
+        <mxCell id="l_est_a1" edge="1" parent="1" source="est_jug" target="est_pk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_est_a2" edge="1" parent="1" source="est_jug" target="est_kil">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_est_a3" edge="1" parent="1" source="est_jug" target="est_dea">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_est_a4" edge="1" parent="1" source="est_jug" target="est_ass">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l_est_a5" edge="1" parent="1" source="est_jug" target="est_dan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="apodo_equipo" vertex="1">
+          <mxGeometry height="40" width="95" x="1490" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="hora_juego" vertex="1">
+          <mxGeometry height="40" width="105" x="530" y="603" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-6" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#fad9d5;strokeColor=light-dark(#000000, #ec8f82);" value="&lt;b&gt;ORGANIZA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="75" x="422.5" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-9" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#fad9d5;strokeColor=light-dark(#000000, #ec8f82);" value="&lt;b&gt;INSCRIBE&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="75" x="1224.5" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-10" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#fad9d5;strokeColor=light-dark(#000000, #ec8f82);" value="&lt;b&gt;PROGRAMA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="75" x="610" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-11" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#fad9d5;strokeColor=light-dark(#000000, #ec8f82);" value="&lt;b&gt;REGISTRA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="75" x="610" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-12" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#fad9d5;strokeColor=light-dark(#000000, #ec8f82);" value="&lt;b&gt;GENERA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="75" x="1455" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-18" edge="1" parent="1" source="htBvTK48q9H14GhvChEC-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="htBvTK48q9H14GhvChEC-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-23" edge="1" parent="1" source="htBvTK48q9H14GhvChEC-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="htBvTK48q9H14GhvChEC-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-24" edge="1" parent="1" source="htBvTK48q9H14GhvChEC-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="htBvTK48q9H14GhvChEC-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-25" edge="1" parent="1" source="htBvTK48q9H14GhvChEC-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="htBvTK48q9H14GhvChEC-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;fillColor=#cdeb8b;strokeColor=#36393d;" value="FICHA_TORNEO_EQUIPO" vertex="1">
+          <mxGeometry height="40" width="187.5" x="976" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-14" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=11;fillColor=#eeeeee;strokeColor=#36393d;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1:N&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="835" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-16" edge="1" parent="1" source="htBvTK48q9H14GhvChEC-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="htBvTK48q9H14GhvChEC-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-15" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=1;fontSize=11;fillColor=#eeeeee;strokeColor=#36393d;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;N:1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="1217" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-19" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#fad9d5;strokeColor=light-dark(#000000, #ec8f82);" value="&lt;b&gt;RECIBE&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="75" x="842.5" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="FK_id_equipo" vertex="1">
+          <mxGeometry height="40" width="90" x="1090" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="FK_id_torneo" vertex="1">
+          <mxGeometry height="40" width="90" x="958" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="PK_id_ficha" vertex="1">
+          <mxGeometry height="40" width="90" x="1024.75" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="htBvTK48q9H14GhvChEC-26" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=#fad9d5;strokeColor=light-dark(#000000, #ec8f82);" value="&lt;b&gt;PERTENECE&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="75" x="1455" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="bR5e6OKixnW1KOANhnXn-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="apellido" vertex="1">
+          <mxGeometry height="40" width="90" x="1482.5" y="573.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
